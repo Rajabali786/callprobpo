@@ -2,24 +2,25 @@ import { Layout } from "@/components/layout/Layout";
 import { Linkedin, Twitter, Mail } from "lucide-react";
 import { CTASection } from "@/components/sections/CTASection";
 
+
 const leadership = [
   {
     name: "Michael Anderson",
     role: "Chief Executive Officer",
     bio: "20+ years of experience in BPO and customer service management.",
-    image: "MA",
+    image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "Sarah Mitchell",
     role: "Chief Operations Officer",
     bio: "Expert in operational excellence and process optimization.",
-    image: "SM",
+    image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "David Chen",
     role: "Chief Technology Officer",
     bio: "Leading technology innovation in call center solutions.",
-    image: "DC",
+    image: "src/assets/images/rajab.jpeg",
   },
 ];
 
@@ -28,37 +29,37 @@ const managers = [
     name: "Jennifer Roberts",
     role: "Customer Success Manager",
     bio: "Dedicated to ensuring client satisfaction and success.",
-    image: "JR",
+    image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "Robert Williams",
     role: "Quality Assurance Manager",
     bio: "Ensuring highest standards in service delivery.",
-    image: "RW",
+    image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "Emily Thompson",
     role: "Training & Development Manager",
     bio: "Building skilled and professional agent teams.",
-    image: "ET",
+    image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "James Wilson",
     role: "Operations Supervisor",
     bio: "Overseeing day-to-day call center operations.",
-    image: "JW",
+    image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "Maria Garcia",
     role: "Team Lead - Inbound",
     bio: "Leading inbound support teams to excellence.",
-    image: "MG",
+   image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "Thomas Brown",
     role: "Team Lead - Outbound",
     bio: "Driving successful outbound campaigns.",
-    image: "TB",
+    image: "src/assets/images/rajab.jpeg",
   },
 ];
 
@@ -102,11 +103,13 @@ const Team = () => {
                 className="group text-center"
               >
                 <div className="relative mb-6">
-                  <div className="w-40 h-40 mx-auto rounded-3xl bg-gradient-orange flex items-center justify-center shadow-lg group-hover:shadow-orange transition-shadow duration-300">
-                    <span className="text-4xl font-bold text-primary-foreground">
-                      {member.image}
-                    </span>
-                  </div>
+                      <div className="w-40 h-40 mx-auto rounded-3xl bg-gradient-orange flex items-center justify-center shadow-lg group-hover:shadow-orange transition-shadow duration-300 overflow-hidden">
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="w-full h-full object-cover rounded-3xl"
+                            />
+                      </div>
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-1">
                   {member.name}
@@ -158,10 +161,12 @@ const Team = () => {
                 className="group p-6 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 rounded-2xl bg-orange-100 group-hover:bg-gradient-orange flex items-center justify-center shrink-0 transition-all duration-300">
-                    <span className="text-lg font-bold text-primary group-hover:text-primary-foreground transition-colors duration-300">
-                      {member.image}
-                    </span>
+                  <div className="w-16 h-16 rounded-2xl bg-orange-100 group-hover:bg-gradient-orange flex items-center justify-center shrink-0 transition-all duration-300 overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">
