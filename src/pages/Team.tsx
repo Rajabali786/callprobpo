@@ -1,65 +1,67 @@
 import { Layout } from "@/components/layout/Layout";
 import { Linkedin, Twitter, Mail } from "lucide-react";
 import { CTASection } from "@/components/sections/CTASection";
+import Rajab from "@/assets/images/rajab.jpeg";
+
 
 
 const leadership = [
   {
     name: "Michael Anderson",
-    role: "Chief Executive Officer",
+    image: Rajab,
     bio: "20+ years of experience in BPO and customer service management.",
-    image: "src/assets/images/rajab.jpeg",
+    // image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "Sarah Mitchell",
-    role: "Chief Operations Officer",
+    image: Rajab,
     bio: "Expert in operational excellence and process optimization.",
-    image: "src/assets/images/rajab.jpeg",
+    // image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "David Chen",
-    role: "Chief Technology Officer",
+    image: Rajab,
     bio: "Leading technology innovation in call center solutions.",
-    image: "src/assets/images/rajab.jpeg",
+    // image: "src/assets/images/rajab.jpeg",
   },
 ];
 
 const managers = [
   {
     name: "Jennifer Roberts",
-    role: "Customer Success Manager",
+    image: Rajab,
     bio: "Dedicated to ensuring client satisfaction and success.",
-    image: "src/assets/images/rajab.jpeg",
+    // image: "src/assets/images/rajab.jpeg",
   },
   {
     name: "Robert Williams",
-    role: "Quality Assurance Manager",
+    image: Rajab,
     bio: "Ensuring highest standards in service delivery.",
-    image: "src/assets/images/rajab.jpeg",
+    
   },
   {
     name: "Emily Thompson",
-    role: "Training & Development Manager",
+    image: Rajab,
     bio: "Building skilled and professional agent teams.",
-    image: "src/assets/images/rajab.jpeg",
+    
   },
   {
     name: "James Wilson",
-    role: "Operations Supervisor",
+    image: Rajab,
     bio: "Overseeing day-to-day call center operations.",
-    image: "src/assets/images/rajab.jpeg",
+    
   },
   {
     name: "Maria Garcia",
-    role: "Team Lead - Inbound",
+    image: Rajab,
     bio: "Leading inbound support teams to excellence.",
-   image: "src/assets/images/rajab.jpeg",
+   
   },
   {
     name: "Thomas Brown",
-    role: "Team Lead - Outbound",
+    image: Rajab,
     bio: "Driving successful outbound campaigns.",
-    image: "src/assets/images/rajab.jpeg",
+  
   },
 ];
 
