@@ -12,6 +12,8 @@ import {
   Send,
   CheckCircle2
 } from "lucide-react";
+// @ts-ignore: missing types for '@emailjs/browser' (install @emailjs/browser and/or add a declaration file to provide proper types)
+import emailjs from "@emailjs/browser";
 
 const contactInfo = [
   {
@@ -64,22 +66,72 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Prepare template params for EmailJS
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      company: formData.company,
+      message: formData.message,
+      // you can also include a fixed recipient if your EmailJS template supports it
+      to_email: "rajabsarfrazali2002@gmail.com",
+    };
 
-    toast({
-      title: "Message Sent Successfully!",
-      description: "We'll get back to you within 24 hours.",
-    });
+    // Use environment variables for service/template/public keys.
+    // Set these in your local .env (Vite uses VITE_ prefix) and in Vercel environment settings:
+    // VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      company: "",
-      message: "",
-    });
-    setIsSubmitting(false);
+    // Initialize EmailJS with public key if available — gives clearer behavior in some environments
+    try {
+      if (PUBLIC_KEY && PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+        // init is idempotent — safe to call
+        // @ts-ignore
+        emailjs.init(PUBLIC_KEY);
+      }
+    } catch (initErr) {
+      console.warn("EmailJS init warning:", initErr);
+    }
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        message: "",
+      });
+    } catch (error) {
+      // Log detailed error information to help debugging (network, CORS, auth, etc.)
+      console.error("Email send error:", error);
+      try {
+        // Some errors include response data
+        // @ts-ignore
+        if (error && error.status) console.error("status:", error.status);
+        // @ts-ignore
+        if (error && error.text) console.error("text:", error.text);
+        // If it's a Fetch/Network error, show message
+        // @ts-ignore
+        if (error && error.message) console.error("message:", error.message);
+      } catch (logErr) {
+        console.error("Error while logging error details:", logErr);
+      }
+      toast({
+        title: "Failed to send message",
+        description: "Please try again later or contact us directly. Check console/network for details.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
