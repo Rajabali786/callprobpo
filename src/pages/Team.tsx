@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Linkedin, Twitter, Mail } from "lucide-react";
 import { CTASection } from "@/components/sections/CTASection";
-import Rajab from "@/assets/images/rajab.jpeg";
+import Rajab from "@/assets/images/image1.jpg";
 
 
 
