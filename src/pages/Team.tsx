@@ -1,69 +1,37 @@
 import { Layout } from "@/components/layout/Layout";
 import { Linkedin, Twitter, Mail } from "lucide-react";
 import { CTASection } from "@/components/sections/CTASection";
-import Rajab from "@/assets/images/image1.jpg";
+import sabtain from "@/assets/images/sabtain.jpg";
 
 
 
 const leadership = [
   {
-    name: "Michael Anderson",
-    image: Rajab,
+    name: "Raja Sibtain",
+    image: sabtain,
     bio: "20+ years of experience in BPO and customer service management.",
-    // image: "src/assets/images/rajab.jpeg",
+    role: "Chief Executive Officer",
+    Linkedin: "https://www.linkedin.com/in/raja-sibtain-70102b30b/",
+    Mail: "mailto:royalerechglobes@gmail.com"
   },
   {
     name: "Sarah Mitchell",
-    image: Rajab,
+    image: sabtain,
     bio: "Expert in operational excellence and process optimization.",
-    // image: "src/assets/images/rajab.jpeg",
+    role: "Chief Operating Officer",
+    linkedin: "https://www.linkedin.com/in/raja-sibtain-70102b30b/",
+    
   },
   {
     name: "David Chen",
-    image: Rajab,
+    image: sabtain,
     bio: "Leading technology innovation in call center solutions.",
-    // image: "src/assets/images/rajab.jpeg",
-  },
-];
-
-const managers = [
-  {
-    name: "Jennifer Roberts",
-    image: Rajab,
-    bio: "Dedicated to ensuring client satisfaction and success.",
-    // image: "src/assets/images/rajab.jpeg",
-  },
-  {
-    name: "Robert Williams",
-    image: Rajab,
-    bio: "Ensuring highest standards in service delivery.",
-    
-  },
-  {
-    name: "Emily Thompson",
-    image: Rajab,
-    bio: "Building skilled and professional agent teams.",
-    
-  },
-  {
-    name: "James Wilson",
-    image: Rajab,
-    bio: "Overseeing day-to-day call center operations.",
-    
-  },
-  {
-    name: "Maria Garcia",
-    image: Rajab,
-    bio: "Leading inbound support teams to excellence.",
-   
-  },
-  {
-    name: "Thomas Brown",
-    image: Rajab,
-    bio: "Driving successful outbound campaigns.",
+    role: "Chief Technology Officer",
   
   },
 ];
+
+
 
 const Team = () => {
   return (
@@ -120,7 +88,7 @@ const Team = () => {
                 <p className="text-sm text-muted-foreground mb-4">{member.bio}</p>
                 <div className="flex justify-center gap-3">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/raja-sibtain-70102b30b/"
                     className="w-9 h-9 rounded-lg bg-muted hover:bg-primary flex items-center justify-center transition-colors duration-300 group/icon"
                   >
                     <Linkedin className="w-4 h-4 text-muted-foreground group-hover/icon:text-primary-foreground" />
@@ -132,7 +100,7 @@ const Team = () => {
                     <Twitter className="w-4 h-4 text-muted-foreground group-hover/icon:text-primary-foreground" />
                   </a>
                   <a
-                    href="#"
+                    href="mailto:royalerechglobes@gmail.com"
                     className="w-9 h-9 rounded-lg bg-muted hover:bg-primary flex items-center justify-center transition-colors duration-300 group/icon"
                   >
                     <Mail className="w-4 h-4 text-muted-foreground group-hover/icon:text-primary-foreground" />
@@ -145,43 +113,50 @@ const Team = () => {
       </section>
 
       {/* Management Team */}
-      <section className="py-16 lg:py-24 bg-muted/50">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Management & Team Leads
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              The backbone of our operations, ensuring excellence in every interaction
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {managers.map((member) => (
-              <div
-                key={member.name}
-                className="group p-6 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 rounded-2xl bg-orange-100 group-hover:bg-gradient-orange flex items-center justify-center shrink-0 transition-all duration-300 overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-1">
-                      {member.name}
-                    </h3>
-                    <p className="text-sm text-primary font-medium mb-2">
-                      {member.role}
-                    </p>
-                    <p className="text-sm text-muted-foreground">{member.bio}</p>
-                  </div>
-                </div>
+       {/* CEO Message */}
+      <section className="section-padding bg-secondary">
+        <div className="container-corporate">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <img
+                src={sabtain}
+                alt="Richard M. Sterling - CEO"
+                className="rounded-2xl shadow-corporate-xl w-full max-w-md mx-auto"
+              />
+            </div>
+            <div>
+              <span className="inline-block px-4 py-2 rounded-full bg-orange-100 text-primary font-semibold text-sm mb-6">
+                Message from Leadership
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                "Our people are our greatest asset"
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  At Royale Tech Globes, we believe that exceptional customer experiences 
+                  start with exceptional people. Over the past 15 years, we've built 
+                  a team of dedicated professionals who share our passion for service 
+                  excellence.
+                </p>
+                <p>
+                  We invest heavily in training, development, and creating a work 
+                  environment where our team members can thrive. This investment pays 
+                  dividends in the quality of service we deliver to our clients and 
+                  their customers.
+                </p>
+                <p>
+                  I'm proud of what we've accomplished together, and I'm excited about 
+                  the future we're building. Thank you for considering GlobalConnect 
+                  as your customer engagement partner.
+                </p>
               </div>
-            ))}
+              <div className="mt-8">
+                <p className="font-montserrat font-bold text-xl text-foreground">
+                  Raja Sibtain
+                </p>
+                <p className="text-primary">Chief Executive Officer</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -195,7 +170,7 @@ const Team = () => {
                 Our Team Culture
               </h2>
               <p className="text-lg text-muted-foreground">
-                At CallPro, we believe that great customer service starts with a great team. 
+                At Royale Tech bpo, we believe that great customer service starts with a great team. 
                 We foster a culture of continuous learning, collaboration, and excellence.
               </p>
               <ul className="space-y-4">

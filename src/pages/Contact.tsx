@@ -19,14 +19,15 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+1 (234) 567-890", "+1 (234) 567-891"],
-    action: "tel:+1234567890",
+    details: ["+92 (3199) 966-101", "+1 (234) 567-891"],
+    action: "tel:+923199966101",
   },
+  
   {
     icon: Mail,
     title: "Email",
-    details: ["info@callpro.com", "support@callpro.com"],
-    action: "mailto:info@callpro.com",
+    details: ["royalerechglobes@gmail.com", "royalerechglobes@gmail.com"],
+    action: "royalerechglobes@gmail.com",
   },
   {
     icon: MapPin,

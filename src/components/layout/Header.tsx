@@ -46,7 +46,7 @@ export function Header() {
               <Phone className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="text-xl font-bold text-foreground">
-              Call<span className="text-primary">Pro</span>
+              Royale<span className="text-primary">Tech</span>
             </span>
           </Link>
 

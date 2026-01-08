@@ -31,7 +31,7 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-primary-foreground" />
               </div>
               <span className="text-xl font-bold text-gray-100">
-                Call<span className="text-primary">Pro</span>
+                Royale<span className="text-primary">Tech</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
@@ -40,14 +40,14 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/raja-sibtain-70102b30b/"
                 className="w-10 h-10 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/raja-sibtain-70102b30b/"
                 className="w-10 h-10 rounded-lg bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors duration-300"
                 aria-label="Twitter"
               >
@@ -114,16 +114,17 @@ export function Footer() {
                   href="tel:+1234567890"
                   className="text-sm text-gray-400 hover:text-primary transition-colors"
                 >
-                  +1 (234) 567-890
+                  +92 (3199) 966-101
+                  
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="mailto:info@callpro.com"
+                  href="mailto:royalerechglobes@gmail.com"
                   className="text-sm text-gray-400 hover:text-primary transition-colors"
                 >
-                  info@callpro.com
+                  royalerechglobes@gmail.com
                 </a>
               </li>
             </ul>
@@ -136,7 +137,7 @@ export function Footer() {
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} CallPro. All rights reserved.
+              © {new Date().getFullYear()} Royale Tech bpo. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-sm text-gray-500 hover:text-gray-300 transition-colors">

@@ -55,7 +55,7 @@ export function WhyChooseUsSection() {
                 Why Choose Us
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                The <span className="text-gradient">CallPro</span> Advantage
+                The <span className="text-gradient">ROYALE TECH GLOBES</span> Advantage
               </h2>
               <p className="text-lg text-muted-foreground">
                 We combine industry expertise, cutting-edge technology, and a customer-first 

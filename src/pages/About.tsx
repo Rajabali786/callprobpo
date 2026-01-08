@@ -72,7 +72,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p className="text-lg">
-                  CallPro is a leading call center and BPO service provider with over 15 years 
+                 Royale Tech Globes is a leading call center and BPO service provider with over 15 years 
                   of experience in delivering exceptional customer service solutions to businesses 
                   worldwide.
                 </p>

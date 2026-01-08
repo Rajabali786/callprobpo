@@ -27,7 +27,7 @@ export function HeroSection() {
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Professional Call Center &{" "}
-              <span className="text-gradient">BPO123 Solutions</span> for Global Businesses
+              <span className="text-gradient">BPO Solutions</span> for Global Businesses
             </h1>
 
             {/* Sub-headline */}
