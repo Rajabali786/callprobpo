@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Linkedin, Twitter, Mail } from "lucide-react";
 import { CTASection } from "@/components/sections/CTASection";
 import sabtain from "@/assets/images/sabtain.jpg";
+import david from "@/assets/images/image1.jpg";
 
 
 
@@ -9,7 +10,7 @@ const leadership = [
   {
     name: "Raja Sibtain",
     image: sabtain,
-    bio: "20+ years of experience in BPO and customer service management.",
+    bio: "10+ years of experience in BPO and customer service management.",
     role: "Chief Executive Officer",
     Linkedin: "https://www.linkedin.com/in/raja-sibtain-70102b30b/",
     Mail: "mailto:royalerechglobes@gmail.com"
@@ -24,7 +25,7 @@ const leadership = [
   },
   {
     name: "David Chen",
-    image: sabtain,
+    image: david,
     bio: "Leading technology innovation in call center solutions.",
     role: "Chief Technology Officer",
   
@@ -134,7 +135,7 @@ const Team = () => {
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   At Royale Tech Globes, we believe that exceptional customer experiences 
-                  start with exceptional people. Over the past 15 years, we've built 
+                  start with exceptional people. Over the past 10 years, we've built 
                   a team of dedicated professionals who share our passion for service 
                   excellence.
                 </p>
