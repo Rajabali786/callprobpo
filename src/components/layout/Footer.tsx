@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import logo from "@/assets/images/lago.png";
 
 const quickLinks = [
   { name: "Home", path: "/" },
@@ -27,9 +28,13 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-gradient-orange flex items-center justify-center">
-                <Phone className="w-5 h-5 text-primary-foreground" />
-              </div>
+               <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-md group-hover:shadow-orange transition-shadow duration-300">
+              <img
+                src={logo}
+                alt="RoyaleTech Logo"
+                className="w-7 h-7 object-contain"
+              />
+            </div>
               <span className="text-xl font-bold text-gray-100">
                 Royale<span className="text-primary">Tech</span>
               </span>
