@@ -3,6 +3,7 @@ import { Linkedin, Twitter, Mail } from "lucide-react";
 import { CTASection } from "@/components/sections/CTASection";
 import sabtain from "@/assets/images/sabtain.jpg";
 import david from "@/assets/images/image1.jpg";
+import raheel from "@/assets/images/sabtain2.jpeg";
 
 
 
@@ -16,8 +17,8 @@ const leadership = [
     Mail: "mailto:royalerechglobes@gmail.com"
   },
   {
-    name: "Sarah Mitchell",
-    image: sabtain,
+    name: "Raheel Majid",
+    image: raheel,
     bio: "Expert in operational excellence and process optimization.",
     role: "Chief Operating Officer",
     linkedin: "https://www.linkedin.com/in/raja-sibtain-70102b30b/",
